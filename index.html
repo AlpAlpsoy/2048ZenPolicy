@@ -1,278 +1,114 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
-<title>Privacy Policy — 2048 Zen</title>
+<title>2048 Zen — Gizlilik Politikası / Privacy Policy</title>
 <style>
-:root {
-  --bg: #fcfafa;
-  --surface: #ffffff;
-  --text: #292323;
-  --text-muted: #6e6564;
-  --accent: #e8557a;
-  --accent-soft: #fdeaef;
-  --border: #ece4e4;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #1c1817;
-    --surface: #241f1e;
-    --text: #f3eeec;
-    --text-muted: #a79d9b;
-    --accent: #ff8fa8;
-    --accent-soft: #3a2530;
-    --border: #362f2e;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #1c1817;
-  --surface: #241f1e;
-  --text: #f3eeec;
-  --text-muted: #a79d9b;
-  --accent: #ff8fa8;
-  --accent-soft: #3a2530;
-  --border: #362f2e;
-}
-
-* { box-sizing: border-box; }
-
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
-  margin: 0;
-  line-height: 1.6;
-}
-
-.wrap {
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 56px 24px 96px;
-}
-
-header {
-  margin-bottom: 32px;
-}
-
-.eyebrow {
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin: 0 0 10px;
-}
-
-h1 {
-  font-size: clamp(26px, 4vw, 32px);
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  margin: 0 0 8px;
-  text-wrap: balance;
-}
-
-.meta {
-  color: var(--text-muted);
-  font-size: 14px;
-  margin: 0;
-}
-
-.lang-toggle {
-  display: inline-flex;
-  gap: 4px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 4px;
-  margin-top: 24px;
-}
-
-.lang-toggle button {
-  font-family: inherit;
-  font-size: 13px;
-  font-weight: 600;
-  border: none;
-  background: transparent;
-  color: var(--text-muted);
-  padding: 7px 16px;
-  border-radius: 999px;
-  cursor: pointer;
-}
-
-.lang-toggle button.active {
-  background: var(--accent-soft);
-  color: var(--accent);
-}
-
-section.doc { display: none; }
-section.doc.active { display: block; }
-
-h2 {
-  font-size: 17px;
-  font-weight: 700;
-  margin: 32px 0 10px;
-  letter-spacing: -0.005em;
-}
-
-p {
-  margin: 0 0 14px;
-  max-width: 62ch;
-}
-
-ul {
-  margin: 0 0 14px;
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 6px;
-  max-width: 60ch;
-}
-
-a {
-  color: var(--accent);
-  text-decoration: underline;
-  text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
-  text-underline-offset: 2px;
-}
-
-a:hover {
-  text-decoration-color: var(--accent);
-}
-
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 18px 20px;
-  margin: 20px 0;
-}
-
-.card p:last-child { margin-bottom: 0; }
-
-footer {
-  margin-top: 48px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border);
-  color: var(--text-muted);
-  font-size: 13px;
-}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;max-width:700px;margin:0 auto;padding:24px 16px 64px;line-height:1.6;color:#1a1a1a}
+h1{font-size:1.6em}
+h2{font-size:1.2em;margin-top:2em}
+h3{font-size:1.05em;margin-top:1.5em}
+table{border-collapse:collapse;width:100%;margin:1em 0}
+th,td{border:1px solid #ddd;padding:8px;text-align:left;font-size:0.95em}
+th{background:#f5f5f5}
+.ozet{background:#f5f5f5;border-radius:8px;padding:16px 20px;margin:1.5em 0}
+hr{border:none;border-top:1px solid #ddd;margin:3em 0}
 </style>
 </head>
 <body>
 
-<div class="wrap">
-  <header>
-    <p class="eyebrow">2048 Zen</p>
-    <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: August 10, 2026</p>
-    <div class="lang-toggle" role="tablist">
-      <button type="button" class="active" data-lang="en" role="tab" aria-selected="true">English</button>
-      <button type="button" data-lang="tr" role="tab" aria-selected="false">Türkçe</button>
-    </div>
-  </header>
+<h1>2048 Zen — Gizlilik Politikası</h1>
 
-  <section class="doc active" data-lang-doc="en">
-    <p>2048 Zen ("the app") is developed by an independent developer ("we", "us"). This policy explains what information the app collects, how it's used, and your choices. This app is free to download and is supported by advertising.</p>
-
-    <h2>Information we collect</h2>
-    <p>2048 Zen does not require an account, a sign-up, or a login. We do not collect your name, email, or any personal profile information.</p>
-    <ul>
-      <li><strong>High score:</strong> stored only on your device (via iOS <code>UserDefaults</code>). It is never transmitted to us or to any server we control.</li>
-      <li><strong>Advertising data:</strong> the app displays ads served by Google AdMob (see below).</li>
-    </ul>
-
-    <h2>Advertising (Google AdMob)</h2>
-    <p>We use Google AdMob to show banner and interstitial ads. To serve and measure ads, Google's SDK may collect technical and device information such as device identifiers, general device/OS information, IP-derived approximate location, and ad interaction data (e.g. impressions, clicks).</p>
-    <div class="card">
-      <p>This version of the app does not request App Tracking Transparency (ATT) permission, so ads are served without access to your device's advertising identifier (IDFA) for cross-app tracking. Google may still use limited, non-tracking signals (such as general device and contextual information) to serve ads.</p>
-    </div>
-    <p>Google's own use of data is governed by their policies:</p>
-    <ul>
-      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
-      <li><a href="https://www.google.com/about/company/user-consent-policy/" target="_blank" rel="noopener">Google's Ad Partner policy</a></li>
-    </ul>
-
-    <h2>Children's privacy</h2>
-    <p>2048 Zen is a general-audience puzzle game and is not directed at children under 13. We do not knowingly collect personal information from children. Because the app displays ads, parental guidance is recommended for younger players.</p>
-
-    <h2>Data sharing</h2>
-    <p>We do not sell your data. The only data shared with a third party is the advertising/device data described above, shared with Google solely for the purpose of serving and measuring ads within the app.</p>
-
-    <h2>Your choices</h2>
-    <ul>
-      <li>You can limit ad tracking at any time via iOS <strong>Settings → Privacy &amp; Security → Apple Advertising</strong>, or <strong>Settings → Privacy &amp; Security → Tracking</strong>.</li>
-      <li>You can review and adjust Google's ad personalization settings at <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.</li>
-    </ul>
-
-    <h2>Changes to this policy</h2>
-    <p>We may update this policy as the app evolves (for example, if we add new features or ad formats). Changes will be posted on this page with an updated effective date.</p>
-
-    <h2>Contact</h2>
-    <p>Questions about this policy? Email <a href="mailto:alp.studio@yahoo.com">alp.studio@yahoo.com</a>.</p>
-  </section>
-
-  <section class="doc" data-lang-doc="tr">
-    <p>2048 Zen ("uygulama"), bağımsız bir geliştirici ("biz") tarafından geliştirilmektedir. Bu politika, uygulamanın hangi bilgileri topladığını, bunların nasıl kullanıldığını ve seçeneklerini açıklar. Uygulama ücretsizdir ve reklam gelirleriyle desteklenmektedir.</p>
-
-    <h2>Topladığımız bilgiler</h2>
-    <p>2048 Zen hesap açmanı, kayıt olmanı ya da giriş yapmanı gerektirmez. Adını, e-postanı ya da herhangi bir kişisel profil bilgini toplamayız.</p>
-    <ul>
-      <li><strong>Yüksek skor:</strong> sadece cihazında (iOS <code>UserDefaults</code> üzerinden) saklanır. Bize ya da kontrolümüzdeki herhangi bir sunucuya asla iletilmez.</li>
-      <li><strong>Reklam verisi:</strong> uygulama, Google AdMob tarafından sağlanan reklamları gösterir (aşağıya bakınız).</li>
-    </ul>
-
-    <h2>Reklamlar (Google AdMob)</h2>
-    <p>Banner ve tam ekran (interstitial) reklamları göstermek için Google AdMob kullanıyoruz. Reklamları sunmak ve ölçmek için Google'ın SDK'sı cihaz kimlikleri, genel cihaz/işletim sistemi bilgisi, IP'den türetilen yaklaşık konum ve reklam etkileşim verisi (gösterim, tıklama gibi) toplayabilir.</p>
-    <div class="card">
-      <p>Uygulamanın bu sürümü App Tracking Transparency (ATT) izni istemiyor, bu yüzden reklamlar cihazının reklam kimliğine (IDFA) erişilmeden, uygulamalar arası takip olmadan sunuluyor. Google yine de reklam sunmak için sınırlı, takip amacı taşımayan sinyaller (genel cihaz ve bağlamsal bilgi gibi) kullanabilir.</p>
-    </div>
-    <p>Google'ın kendi veri kullanımı kendi politikalarına tabidir:</p>
-    <ul>
-      <li><a href="https://policies.google.com/privacy?hl=tr" target="_blank" rel="noopener">Google Gizlilik Politikası</a></li>
-      <li><a href="https://www.google.com/about/company/user-consent-policy/" target="_blank" rel="noopener">Google Reklam Ortağı politikası</a></li>
-    </ul>
-
-    <h2>Çocukların gizliliği</h2>
-    <p>2048 Zen genel kitleye yönelik bir bulmaca oyunudur ve 13 yaş altı çocukları hedeflemez. Çocuklardan bilerek kişisel bilgi toplamayız. Uygulama reklam gösterdiği için, küçük yaştaki oyuncular için ebeveyn gözetimi önerilir.</p>
-
-    <h2>Veri paylaşımı</h2>
-    <p>Verilerini satmıyoruz. Üçüncü bir tarafla paylaşılan tek veri, yukarıda açıklanan reklam/cihaz verisidir ve yalnızca uygulama içinde reklam sunmak/ölçmek amacıyla Google ile paylaşılır.</p>
-
-    <h2>Seçeneklerin</h2>
-    <ul>
-      <li>İstediğin zaman iOS <strong>Ayarlar → Gizlilik ve Güvenlik → Apple Reklamcılığı</strong> ya da <strong>Ayarlar → Gizlilik ve Güvenlik → Takip</strong> üzerinden reklam takibini sınırlayabilirsin.</li>
-      <li>Google'ın reklam kişiselleştirme ayarlarını <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a> adresinden gözden geçirip değiştirebilirsin.</li>
-    </ul>
-
-    <h2>Bu politikadaki değişiklikler</h2>
-    <p>Uygulama geliştikçe (örneğin yeni özellikler veya reklam formatları eklendiğinde) bu politikayı güncelleyebiliriz. Değişiklikler, güncellenmiş bir yürürlük tarihiyle bu sayfada yayınlanır.</p>
-
-    <h2>İletişim</h2>
-    <p>Bu politikayla ilgili sorularını <a href="mailto:alp.studio@yahoo.com">alp.studio@yahoo.com</a> adresine e-posta atarak iletebilirsin.</p>
-  </section>
-
-  <footer>
-    2048 Zen — Privacy Policy / Gizlilik Politikası
-  </footer>
+<div class="ozet">
+<strong>Özet:</strong> 2048 Zen'de hesap sistemi yoktur, kişisel bilgini toplamayız. Tek sakladığımız veri en yüksek skorun, o da sadece kendi cihazında tutulur, bize hiç ulaşmaz. Uygulama ücretsizdir ve banner/tam ekran reklamlarla desteklenir — bu reklamları göstermek için Google AdMob kullanırız, bu da aşağıda anlattığımız şekilde bazı cihaz/reklam verisi toplar.
 </div>
 
-<script>
-  document.querySelectorAll('.lang-toggle button').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var lang = btn.getAttribute('data-lang');
-      document.querySelectorAll('.lang-toggle button').forEach(function (b) {
-        b.classList.toggle('active', b === btn);
-        b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
-      });
-      document.querySelectorAll('.doc').forEach(function (sec) {
-        sec.classList.toggle('active', sec.getAttribute('data-lang-doc') === lang);
-      });
-    });
-  });
-</script>
+<h2>1. Hangi Verileri Topluyoruz</h2>
+
+<h3>1.1 Hesap</h3>
+<p>2048 Zen'de hesap sistemi yoktur — giriş yapmana, kayıt olmana ya da ad, e-posta gibi bir kişisel bilgini paylaşmana gerek yoktur. Toplamadığımız için saklayacağımız bir hesap verisi de yoktur.</p>
+
+<h3>1.2 Oyun verisi (skor)</h3>
+<p>En yüksek skorun sadece cihazında (iOS <code>UserDefaults</code> üzerinden) saklanır. Bu veri bize ya da kontrolümüzdeki herhangi bir sunucuya asla iletilmez. Uygulamayı sildiğinde bu veri de cihazından silinir.</p>
+
+<h3>1.3 Reklam verisi</h3>
+<p>Uygulama içinde banner ve tam ekran reklamları göstermek için Google AdMob kullanıyoruz. Reklamları sunmak ve ölçmek için Google'ın SDK'sı cihaz kimlikleri, genel cihaz/işletim sistemi bilgisi, IP'den türetilen yaklaşık konum ve reklam etkileşim verisi (gösterim, tıklama gibi) toplayabilir. Uygulama App Tracking Transparency (ATT) izni istemez, yani reklamlar cihazının reklam kimliğine (IDFA) erişilmeden, uygulamalar arası takip olmadan sunulur.</p>
+
+<h2>2. Üçüncü Taraflarla Paylaşım</h2>
+<p>Verini hiçbir zaman satmıyoruz. Üçüncü taraflarla paylaşılan tek veri, reklam gösterimiyle ilgili aşağıdaki veridir:</p>
+
+<table>
+<tr><th>Sağlayıcı</th><th>Amaç</th><th>Ne gönderilir</th></tr>
+<tr><td>Google AdMob</td><td>Banner ve tam ekran reklamların gösterilmesi</td><td>Cihaz kimlikleri, genel cihaz/OS bilgisi, reklam etkileşim verisi (IDFA olmadan)</td></tr>
+<tr><td>Apple (App Store)</td><td>Uygulamanın indirilmesi ve kurulumu</td><td>Uygulama ücretsizdir, ödeme işlemi yoktur; kurulum tamamen Apple üzerinden yürür</td></tr>
+</table>
+
+<p>Google'ın kendi veri kullanımı kendi politikalarına tabidir: <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> ve <a href="https://www.google.com/about/company/user-consent-policy/">Google Reklam Ortağı politikası</a>.</p>
+
+<h2>3. Saklama Süresi</h2>
+<p>En yüksek skorun bizim herhangi bir sistemimizde hiç saklanmaz çünkü bize hiç ulaşmaz — sen silene ya da uygulamayı kaldırana kadar sadece kendi cihazında kalır. Google AdMob'un topladığı verinin saklanma süresi Google'ın kendi politikalarına tabidir.</p>
+
+<h2>4. İzinler</h2>
+<p>Uygulama kamera, mikrofon, konum ya da fotoğraflar gibi herhangi bir özel izin istemez.</p>
+
+<h2>5. Çocukların Gizliliği</h2>
+<p>2048 Zen genel kitleye yönelik bir bulmaca oyunudur ve 13 yaş altı çocukları hedeflemez. Çocuklardan bilerek kişisel bilgi toplamayız. Uygulama reklam gösterdiği için, küçük yaştaki oyuncular için ebeveyn gözetimi önerilir.</p>
+
+<h2>6. Bu Politikadaki Değişiklikler</h2>
+<p>Uygulama geliştikçe (örneğin yeni özellikler veya reklam formatları eklendiğinde) bu politikayı güncelleyebiliriz. Değişiklikler, güncellenmiş bir tarihle bu sayfada yayınlanır.</p>
+
+<h2>7. Destek/İletişim</h2>
+<p>Sorularınız için alp.studio@yahoo.com adresinden iletişime geçebilirsiniz.</p>
+
+<p><em>Son güncelleme: 10.08.2026</em></p>
+
+<hr>
+
+<h1>2048 Zen — Privacy Policy</h1>
+
+<div class="ozet">
+<strong>Summary:</strong> 2048 Zen has no account system and does not collect personal information. The only data we keep is your high score, and it stays on your device only — it never reaches us. The app is free and supported by banner/interstitial ads — we use Google AdMob to show these ads, which collects some device/ad data as described below.
+</div>
+
+<h2>1. Information We Collect</h2>
+
+<h3>1.1 Account</h3>
+<p>2048 Zen has no account system — there's no need to sign up, log in, or share personal information like your name or email. Since we don't collect it, there's no account data for us to store.</p>
+
+<h3>1.2 Game data (score)</h3>
+<p>Your high score is stored only on your device (via iOS <code>UserDefaults</code>). This data is never transmitted to us or to any server we control. It is deleted from your device when you delete the app.</p>
+
+<h3>1.3 Advertising data</h3>
+<p>We use Google AdMob to show banner and interstitial ads within the app. To serve and measure ads, Google's SDK may collect device identifiers, general device/OS information, IP-derived approximate location, and ad interaction data (e.g. impressions, clicks). The app does not request App Tracking Transparency (ATT) permission, so ads are served without access to your device's advertising identifier (IDFA) for cross-app tracking.</p>
+
+<h2>2. Sharing With Third Parties</h2>
+<p>We never sell your data. The only data shared with a third party is the ad-related data below:</p>
+
+<table>
+<tr><th>Provider</th><th>Purpose</th><th>What's shared</th></tr>
+<tr><td>Google AdMob</td><td>Displaying banner and interstitial ads</td><td>Device identifiers, general device/OS info, ad interaction data (without IDFA)</td></tr>
+<tr><td>Apple (App Store)</td><td>Downloading and installing the app</td><td>The app is free, no payment is involved; installation runs entirely through Apple</td></tr>
+</table>
+
+<p>Google's own use of data is governed by their own policies: <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://www.google.com/about/company/user-consent-policy/">Google's Ad Partner policy</a>.</p>
+
+<h2>3. Retention</h2>
+<p>Your high score is never stored on any system of ours because it never reaches us — it stays on your device until you delete it or remove the app. Data collected by Google AdMob is retained per Google's own policies.</p>
+
+<h2>4. Permissions</h2>
+<p>The app does not request any special permissions such as camera, microphone, location, or photos.</p>
+
+<h2>5. Children's Privacy</h2>
+<p>2048 Zen is a general-audience puzzle game and is not directed at children under 13. We do not knowingly collect personal information from children. Because the app displays ads, parental guidance is recommended for younger players.</p>
+
+<h2>6. Changes to This Policy</h2>
+<p>We may update this policy as the app evolves (for example, if we add new features or ad formats). Changes will be posted on this page with an updated date.</p>
+
+<h2>7. Support/Contact</h2>
+<p>For questions, contact us at alp.studio@yahoo.com.</p>
+
+<p><em>Last updated: August 10, 2026</em></p>
 
 </body>
 </html>
